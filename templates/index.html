@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Face Detection System</h1>
+    <p>Real-Time Face Detection Using OpenCV</p>
+
+    <video id="video" autoplay playsinline></video>
+
+    <br><br>
+
+    <button id="startBtn">Start Camera</button>
+    <button id="stopBtn">Stop Camera</button>
+
+    <h3>Detected Face:</h3>
+    <img id="output" alt="Detection result">
+
+    <canvas id="canvas" hidden></canvas>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
+
